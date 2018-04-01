@@ -1,3 +1,5 @@
+// Autoamting the process of generating random numbers
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
@@ -10,10 +12,10 @@ public class RnGAutomation {
 	@Test
 	public void Experiment() 
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Desktop\\KAutomation\\ExeFiles\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Desktop\\Automation\\ExeFiles\\chromedriver.exe"); //Specifying the path of Chrome Driver
 		WebDriver x=new ChromeDriver();
-		x.get("https://www.random.org/integers/");
-		x.manage().window().maximize();
+		x.get("https://www.random.org/integers/"); //Link for any random website of your choice
+		x.manage().window().maximize(); //Maximizing the webpage
 		
 		x.findElement(By.xpath("//*[@id=\"invisible\"]/form/p[1]/input")).clear();//clearing existing value
 		x.findElement(By.xpath("//*[@id=\"invisible\"]/form/p[1]/input")).sendKeys("10");//Sending new value		
@@ -43,7 +45,7 @@ public class RnGAutomation {
 				}					
 				int[] SArray = new int[num.length];
 				int temp;
-				for (int j = 0; j <= num.length; j++) //sorting
+				for (int j = 0; j <= num.length; j++) //sorting in ascending order. I haven't used Java built-in libraries for sorting. No specific reason for doing it.
 				{
 					for (int k = j+1; k < num.length; k++)
 					{
@@ -69,6 +71,6 @@ public class RnGAutomation {
 		{
 			e.printStackTrace();
 		}
-		x.quit();
+		x.quit(); //exiting the Web Browser 
 		}
 	}

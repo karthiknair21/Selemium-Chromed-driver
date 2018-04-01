@@ -10,7 +10,7 @@ public class RnGAutomation {
 	@Test
 	public void Experiment() 
 	{
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Karthik\\Desktop\\KarthikAutomation\\ExeFiles\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Desktop\\KAutomation\\ExeFiles\\chromedriver.exe");
 		WebDriver x=new ChromeDriver();
 		x.get("https://www.random.org/integers/");
 		x.manage().window().maximize();

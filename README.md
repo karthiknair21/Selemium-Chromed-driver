@@ -7,6 +7,6 @@ TestNG is a testing framework for Java is also being used in the code. You can d
 Now once you have installed all the required software you are ready to start scripting.
 Open Eclipse and create a new project. Under src create a new package. Create a new class. 
 Create two new folders under your project and name it ExeFiles and JarFiles. Copy the chromedriver.exe file and paste it under ExeFiles and copy selenium-server-standalone-3.11.0 and paste it under JarFiles. Right click on this file and build path.
-Now you can use the script and keep trying and experimenting new things!
-To find the xpath of an element on the webpage right click on that element and go to Inspect. Copy the xpath. 
+To find the xpath of an element on the webpage right click on that element and go to Inspect. Copy the xpath.
+Now you can use the script and keep trying and experimenting new things! 
 
